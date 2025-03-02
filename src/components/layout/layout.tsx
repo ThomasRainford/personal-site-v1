@@ -1,11 +1,11 @@
-import sections from "../../data/sections.json";
+import { getSiteSections } from "../../data/data";
 
 interface Props {
   children: React.ReactNode;
 }
 
 const Layout = ({ children }: Props) => {
-  // Load from json file
+  const sections = getSiteSections();
 
   return (
     <div className="drawer drawer-end">
@@ -24,7 +24,9 @@ const Layout = ({ children }: Props) => {
               section.charAt(0).toUpperCase() + section.slice(1);
             return (
               <li key={section}>
-                <a className="text-accent">{sectionFormatted}</a>
+                <a className="text-accent" href={`#${section}`}>
+                  {sectionFormatted}
+                </a>
               </li>
             );
           })}

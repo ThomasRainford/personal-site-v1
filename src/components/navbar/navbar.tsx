@@ -1,10 +1,13 @@
-import sections from "../../data/sections.json";
+import { getSiteSections } from "../../data/data";
 
 const Navbar = () => {
+  const sections = getSiteSections();
   return (
-    <nav className="navbar w-full">
-      <div className="mx-2 flex-1 px-2">
-        <h1>T</h1>
+    <nav className="navbar flex justify-between w-full py-2">
+      <div className="mx-2 px-2">
+        <a className="btn btn-outlilne text-4xl font-bold text-primary px-2 py-1">
+          TR
+        </a>
       </div>
       <div className="hidden flex-none sm:block">
         <ul className="menu menu-horizontal">
@@ -14,7 +17,9 @@ const Navbar = () => {
               section.charAt(0).toUpperCase() + section.slice(1);
             return (
               <li key={section}>
-                <a className="text-accent">{sectionFormatted}</a>
+                <a className="text-accent" href={`#${section}`}>
+                  {sectionFormatted}
+                </a>
               </li>
             );
           })}
