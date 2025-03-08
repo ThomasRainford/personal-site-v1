@@ -3,7 +3,7 @@ import { getSiteSections } from "../../data/data";
 const Navbar = () => {
   const sections = getSiteSections();
   return (
-    <nav className="navbar flex justify-between w-full py-2">
+    <nav className="navbar flex justify-between w-full py-5">
       <div className="mx-2 px-2">
         <a className="btn btn-outlilne text-4xl font-bold text-primary px-2 py-1">
           TR
