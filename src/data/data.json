@@ -1,6 +1,39 @@
 {
   "about": {
-    "title": "About"
+    "title": "About",
+    "skills": {
+      "highlights": [
+        "React",
+        "TypeScript",
+        "NextJS",
+        "NodeJS",
+        "Python",
+        "Laravel",
+        "AWS",
+        "VSCode",
+        "Git",
+        "MySQL",
+        "PostgreSQL"
+      ],
+      "all": {
+        "frontend": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "NextJS",
+          "Vite",
+          "MobX",
+          "Redux"
+        ],
+        "backend": ["REST", "GraphQL", "NodeJS", "Laravel"],
+        "database": ["MySQL", "PostgreSQL", "MongoDB", "AWS DynamoDB"],
+        "cloud-devops": ["AWS", "AWS Amplify", "GitHub Actions"],
+        "testing": ["Jest", "React Testing Library", "Cypress", "Playwright"],
+        "tools": ["VSCode", "IntelliJ", "GitHub", "GitLab", "Git"]
+      }
+    }
   },
   "experience": {
     "title": "Experience"
