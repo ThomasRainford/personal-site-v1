@@ -1,10 +1,12 @@
 import { getSiteSection } from "../../../data/data";
 import { AboutSection } from "../../../data/types";
+import { splitAndCapitalize } from "../../../utils/util";
 import SkillIcon from "./SkillIcon";
 
 const About = () => {
   const aboutData = getSiteSection("about") as AboutSection;
   const skillsHighlights = aboutData.skills.highlights;
+  const allSkills = aboutData.skills.all;
 
   return (
     <div>
@@ -22,7 +24,7 @@ const About = () => {
           minim veniam, quis nostrud exercitatio.
         </p>
       </div>
-      <div>
+      <div className="mb-4">
         <div className="mb-4">
           <p className="text-secondary">My skills highlights:</p>
         </div>
@@ -35,6 +37,32 @@ const About = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className="mb-4">
+        <div className="mb-4">
+          <div className="collapse border border-neutral">
+            <input type="checkbox" className="peer" />
+            <div className="collapse-title">All Skills:</div>
+            <div className="collapse-content">
+              {Object.entries(allSkills).map(([key, value]) => {
+                return (
+                  <div className="mb-4">
+                    <p className="text-secondary">{splitAndCapitalize(key)}</p>
+                    <div className="flex flex-row flex-wrap">
+                      {value.map((skill) => {
+                        return (
+                          <div className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1">
+                            <p className="text-accent font-bold">{skill}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>

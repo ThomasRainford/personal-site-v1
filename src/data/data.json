@@ -10,10 +10,10 @@
         "Python",
         "Laravel",
         "AWS",
-        "VSCode",
-        "Git",
         "MySQL",
-        "PostgreSQL"
+        "PostgreSQL",
+        "VSCode",
+        "Git"
       ],
       "all": {
         "frontend": [

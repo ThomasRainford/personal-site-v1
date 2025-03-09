@@ -8,7 +8,12 @@ export type AboutSection = {
   skills: {
     highlights: string[];
     all: {
-      [K in string]: string;
+      frontend: string[];
+      backend: string[];
+      database: string[];
+      "cloud-devops": string[];
+      testing: string[];
+      tools: string[];
     };
   };
 };
