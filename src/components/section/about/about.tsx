@@ -10,18 +10,18 @@ const About = () => {
 
   return (
     <div>
-      <div className="mb-4">
-        <p className="text-accent mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum.
+      <div className="text-accent mb-4">
+        <p className="mb-2">
+          I'm a full-stack software engineer who loves building scalable,
+          high-quality web applications using modern technologies. I thrive in a
+          collaborative environment, working closely with developers and
+          designers to bring ideas to life.
         </p>
-        <p className="text-accent">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitatio.
+        <p>
+          With experience delivering software under tight deadlines, I focus on
+          writing clean, efficient code without sacrificing performance. Always
+          eager to learn, I enjoy staying up to date with the latest
+          technologies and best practices.
         </p>
       </div>
       <div className="mb-4">

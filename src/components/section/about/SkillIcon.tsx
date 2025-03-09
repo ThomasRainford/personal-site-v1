@@ -14,6 +14,8 @@ const SkillIcon = ({ skill }: Props) => {
       return <i className="devicon-nodejs-plain colored text-4xl"></i>;
     case "python":
       return <i className="devicon-python-plain colored text-4xl"></i>;
+    case "java":
+      return <i className="devicon-java-plain colored text-4xl"></i>;
     case "laravel":
       return <i className="devicon-laravel-original colored text-4xl"></i>;
     case "aws":

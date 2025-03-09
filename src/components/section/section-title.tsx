@@ -6,7 +6,9 @@ const SectionTitle = ({ title }: Props) => {
   return (
     <div className="flex flex-col justify-between w-full">
       <div className="divider divider-start">
-        <h2 className="text-2xl font-bold text-secondary">{title}</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-secondary">
+          {title}
+        </h2>
       </div>
     </div>
   );

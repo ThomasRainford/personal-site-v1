@@ -8,6 +8,7 @@
         "NextJS",
         "NodeJS",
         "Python",
+        "Java",
         "Laravel",
         "AWS",
         "MySQL",
@@ -27,7 +28,7 @@
           "MobX",
           "Redux"
         ],
-        "backend": ["REST", "GraphQL", "NodeJS", "Laravel"],
+        "backend": ["REST", "GraphQL", "NodeJS", "Laravel", "Java"],
         "database": ["MySQL", "PostgreSQL", "MongoDB", "AWS DynamoDB"],
         "cloud-devops": ["AWS", "AWS Amplify", "GitHub Actions"],
         "testing": ["Jest", "React Testing Library", "Cypress", "Playwright"],

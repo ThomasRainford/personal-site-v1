@@ -8,6 +8,7 @@ import { getSiteData, getSiteSections } from "./data/data";
 const App = () => {
   const siteData = getSiteData();
   const siteSections = getSiteSections();
+
   return (
     <main>
       <Layout>
@@ -24,7 +25,7 @@ const App = () => {
                   <div className="mb-8">
                     <SectionTitle title={sectionData.title as string} />
                   </div>
-                  <div className="mb-8">
+                  <div className="mb-10">
                     <Section section={section} />
                   </div>
                 </section>
