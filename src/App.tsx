@@ -1,7 +1,7 @@
 import Intro from "./components/intro/intro";
 import Layout from "./components/layout/layout";
 import Navbar from "./components/navbar/navbar";
-import Section from "./components/section/section-content";
+import SectionContent from "./components/section/section-content";
 import SectionTitle from "./components/section/section-title";
 import { getSiteData, getSiteSections } from "./data/data";
 
@@ -26,7 +26,7 @@ const App = () => {
                     <SectionTitle title={sectionData.title as string} />
                   </div>
                   <div className="mb-10">
-                    <Section section={section} />
+                    <SectionContent section={section} />
                   </div>
                 </section>
               );

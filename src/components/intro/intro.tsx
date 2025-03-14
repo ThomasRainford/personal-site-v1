@@ -19,7 +19,7 @@ const Intro = () => {
       <div className="text-accent">
         <p className="text-md sm:text-lg mb-2">
           I build scalable and maintainable soultions with great user
-          experiences. Currenlty working at{" "}
+          experiences. Currently working at{" "}
           <a
             className="text-base-content"
             target="_blank"
@@ -27,9 +27,10 @@ const Intro = () => {
           >
             <b>HortPlus</b>
           </a>
+          .
         </p>
       </div>
-      <div>
+      <div className="mt-5">
         <svg
           className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px]"
           xmlns="http://www.w3.org/2000/svg"

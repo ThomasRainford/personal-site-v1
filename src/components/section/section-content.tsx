@@ -4,14 +4,19 @@ interface Props {
   section: string;
 }
 
-const Section = ({ section }: Props) => {
+const SectionContent = ({ section }: Props) => {
   switch (section) {
     case "about":
       return <About />;
-
+    case "experience":
+      return <></>;
+    case "projects":
+      return <></>;
+    case "contact":
+      return <></>;
     default:
       break;
   }
 };
 
-export default Section;
+export default SectionContent;

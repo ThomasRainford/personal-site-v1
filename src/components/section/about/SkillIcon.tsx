@@ -22,6 +22,8 @@ const SkillIcon = ({ skill }: Props) => {
       return (
         <i className="devicon-amazonwebservices-plain-wordmark text-4xl"></i>
       );
+    case "docker":
+      return <i className="devicon-docker-plain colored text-4xl"></i>;
     case "vscode":
       return <i className="devicon-vscode-plain colored text-4xl"></i>;
     case "git":

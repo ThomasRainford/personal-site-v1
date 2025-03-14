@@ -11,6 +11,7 @@
         "Java",
         "Laravel",
         "AWS",
+        "Docker",
         "MySQL",
         "PostgreSQL",
         "VSCode",
@@ -30,7 +31,7 @@
         ],
         "backend": ["REST", "GraphQL", "NodeJS", "Laravel", "Java"],
         "database": ["MySQL", "PostgreSQL", "MongoDB", "AWS DynamoDB"],
-        "cloud-devops": ["AWS", "AWS Amplify", "GitHub Actions"],
+        "cloud-devops": ["AWS", "AWS Amplify", "GitHub Actions", "Docker"],
         "testing": ["Jest", "React Testing Library", "Cypress", "Playwright"],
         "tools": ["VSCode", "IntelliJ", "GitHub", "GitLab", "Git"]
       }

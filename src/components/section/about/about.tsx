@@ -31,7 +31,10 @@ const About = () => {
         <div className="flex flex-row flex-wrap">
           {skillsHighlights.map((skill) => {
             return (
-              <div className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1">
+              <div
+                key={skill}
+                className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1"
+              >
                 <SkillIcon skill={skill.toLowerCase()} />
                 <p className="text-accent font-bold">{skill}</p>
               </div>
@@ -47,12 +50,15 @@ const About = () => {
             <div className="collapse-content">
               {Object.entries(allSkills).map(([key, value]) => {
                 return (
-                  <div className="mb-4">
+                  <div key={key} className="mb-4">
                     <p className="text-secondary">{splitAndCapitalize(key)}</p>
                     <div className="flex flex-row flex-wrap">
                       {value.map((skill) => {
                         return (
-                          <div className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1">
+                          <div
+                            key={skill}
+                            className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1"
+                          >
                             <p className="text-accent font-bold">{skill}</p>
                           </div>
                         );

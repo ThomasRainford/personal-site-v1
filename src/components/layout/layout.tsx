@@ -24,7 +24,10 @@ const Layout = ({ children }: Props) => {
               const sectionFormatted =
                 section.charAt(0).toUpperCase() + section.slice(1);
               return (
-                <div className="flex justify-center items-center mb-4">
+                <div
+                  key={section}
+                  className="flex justify-center items-center mb-4"
+                >
                   <li key={section} className="">
                     <div>
                       <a

@@ -13,7 +13,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="hidden flex-none sm:block">
-        <ul className="menu menu-horizontal">
+        <ul className="menu menu-md menu-horizontal">
           {/* Navbar menu content here */}
           {sections.map((section) => {
             const sectionFormatted =
