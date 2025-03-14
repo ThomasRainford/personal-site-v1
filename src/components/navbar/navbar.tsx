@@ -4,13 +4,16 @@ const Navbar = () => {
   const sections = getSiteSections();
   return (
     <nav className="navbar flex justify-between w-full py-5">
-      <div className="mx-2 px-2">
-        <a className="btn btn-outlilne text-4xl font-bold text-primary px-2 py-1">
+      <div className="ml-3 px-2">
+        <a
+          className="btn btn-outlilne text-4xl font-bold text-primary px-4 py-1 border-2"
+          href="/"
+        >
           TR
         </a>
       </div>
       <div className="hidden flex-none sm:block">
-        <ul className="menu menu-horizontal">
+        <ul className="menu menu-md menu-horizontal">
           {/* Navbar menu content here */}
           {sections.map((section) => {
             const sectionFormatted =
@@ -25,7 +28,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-      <div className="flex-none sm:hidden">
+      <div className="flex-none sm:hidden mr-3">
         <label
           htmlFor="navbar-drawer"
           aria-label="open sidebar"

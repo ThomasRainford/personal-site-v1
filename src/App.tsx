@@ -1,12 +1,14 @@
 import Intro from "./components/intro/intro";
 import Layout from "./components/layout/layout";
 import Navbar from "./components/navbar/navbar";
+import SectionContent from "./components/section/section-content";
 import SectionTitle from "./components/section/section-title";
 import { getSiteData, getSiteSections } from "./data/data";
 
 const App = () => {
   const siteData = getSiteData();
   const siteSections = getSiteSections();
+
   return (
     <main>
       <Layout>
@@ -20,7 +22,12 @@ const App = () => {
               const sectionData = siteData[section];
               return (
                 <section key={section} id={section}>
-                  <SectionTitle title={sectionData.title as string} />
+                  <div className="mb-8">
+                    <SectionTitle title={sectionData.title as string} />
+                  </div>
+                  <div className="mb-10">
+                    <SectionContent section={section} />
+                  </div>
                 </section>
               );
             })}
