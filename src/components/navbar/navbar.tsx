@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar flex justify-between w-full py-5">
       <div className="ml-3 px-2">
         <a
-          className="btn btn-outlilne text-4xl font-bold text-primary px-4 py-1 border-2"
+          className="btn btn-outlilne text-4xl font-medium text-primary px-4 py-1 border-2"
           href="/"
         >
           TR
