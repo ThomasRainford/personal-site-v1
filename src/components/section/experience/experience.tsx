@@ -12,10 +12,7 @@ const Experience = () => {
       {jobs.map((job, index, self) => {
         return (
           <Fragment key={job.company + job.title}>
-            <div
-              key={job.title + job.company}
-              className="w-[100%] sm:w-[80%] md:w-[80%] lg:w-[70%]  border border-neutral p-2 rounded"
-            >
+            <div className="w-[100%] sm:w-[80%] md:w-[80%] lg:w-[70%] border border-neutral p-3 rounded">
               <div className="flex flex-row text-lg mb-2">
                 <div className="mr-1">{job.title}</div>
                 <div>
@@ -51,7 +48,7 @@ const Experience = () => {
               </div>
             </div>
             {index !== self.length - 1 && (
-              <div className="h-[20px] w-[5px] border-l-2 border-secondary rounded-2xl my-0.5 ml-[1px]"></div>
+              <div className="h-[20px] w-[5px] border-l-2 border-neutral rounded-2xl my-0.5 ml-[1px]"></div>
             )}
           </Fragment>
         );

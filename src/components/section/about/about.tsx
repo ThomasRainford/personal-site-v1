@@ -37,7 +37,7 @@ const About = () => {
                 className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1"
               >
                 <SkillIcon skill={skill.toLowerCase()} />
-                <p className="text-accent font-bold">{skill}</p>
+                <p className="text-accent font-bold text-sm">{skill}</p>
               </div>
             );
           })}

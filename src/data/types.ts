@@ -30,11 +30,24 @@ export type ExperienceSection = {
   }[];
 };
 
+export type ProjectsSection = {
+  title: string;
+  projects: {
+    type: string;
+    link: string;
+    title: string;
+    description: string;
+    skills: string[];
+    githubLink: string;
+  }[];
+};
+
 export type SiteData = {
   [K in SectionKeys]:
     | {
         title: string;
       }
     | AboutSection
-    | ExperienceSection;
+    | ExperienceSection
+    | ProjectsSection;
 };
