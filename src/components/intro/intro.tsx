@@ -16,7 +16,7 @@ const Intro = () => {
           </h1>
         </div>
       </div>
-      <div className="text-accent">
+      <div className="text-accent w-[100%] sm:w-[75%] lg:w-[65%]">
         <p className="text-md sm:text-lg mb-2">
           I build scalable and maintainable soultions with great user
           experiences. Currently working at{" "}

@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const sections = ["about", "experience", "projects", "contact"] as const;
 
 export type SectionKeys = (typeof sections)[number];
@@ -18,10 +17,37 @@ export type AboutSection = {
   };
 };
 
+export type ExperienceSection = {
+  title: string;
+  jobs: {
+    link: string;
+    title: string;
+    company: string;
+    startDate: string;
+    endDate: string;
+    description: string[];
+    skills: string[];
+  }[];
+};
+
+export type ProjectsSection = {
+  title: string;
+  projects: {
+    type: string;
+    link: string;
+    title: string;
+    description: string;
+    skills: string[];
+    githubLink: string;
+  }[];
+};
+
 export type SiteData = {
   [K in SectionKeys]:
     | {
         title: string;
       }
-    | AboutSection;
+    | AboutSection
+    | ExperienceSection
+    | ProjectsSection;
 };

@@ -1,6 +1,7 @@
 import { getSiteSection } from "../../../data/data";
 import { AboutSection } from "../../../data/types";
 import { splitAndCapitalize } from "../../../utils/util";
+import SkillPill from "../../SkillPill";
 import SkillIcon from "./SkillIcon";
 
 const About = () => {
@@ -36,7 +37,7 @@ const About = () => {
                 className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1"
               >
                 <SkillIcon skill={skill.toLowerCase()} />
-                <p className="text-accent font-bold">{skill}</p>
+                <p className="text-accent font-bold text-sm">{skill}</p>
               </div>
             );
           })}
@@ -50,18 +51,11 @@ const About = () => {
             <div className="collapse-content">
               {Object.entries(allSkills).map(([key, value]) => {
                 return (
-                  <div key={key} className="mb-4">
-                    <p className="text-secondary">{splitAndCapitalize(key)}</p>
+                  <div key={key} className="mb-2">
+                    <p className="text-accent">{splitAndCapitalize(key)}</p>
                     <div className="flex flex-row flex-wrap">
                       {value.map((skill) => {
-                        return (
-                          <div
-                            key={skill}
-                            className="flex flex-col items-center mr-3 mb-2 border border-neutral rounded-md p-1"
-                          >
-                            <p className="text-accent font-bold">{skill}</p>
-                          </div>
-                        );
+                        return <SkillPill key={skill} skill={skill} />;
                       })}
                     </div>
                   </div>

@@ -38,10 +38,83 @@
     }
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "jobs": [
+      {
+        "link": "https://hortplus.com",
+        "title": "Software Developer",
+        "company": "HortPlus",
+        "startDate": "February 2022",
+        "endDate": "Present",
+        "description": [
+          "I drove the adoption of Agile methodologies and CI/CD pipelines, streamlining development processes and significantly improving deployment efficiency and code quality. A key highlight of my work was leading the redesign of a weather data API to support international weather stations, expanding the company's reach and increasing the station network by over 100%.",
+          "I also spearheaded critical enhancements, such as an offline synchronization feature for a progressive web app, reducing bug complaints by 90%, and upgrading a multi-tenanted authentication system for improved scalability and observability. Throughout my work, I’ve collaborated closely with designers and cross-functional teams to ensure seamless, high-quality feature integration."
+        ],
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Vite",
+          "MobX",
+          "Redux",
+          "Laravel",
+          "Mapbox",
+          "MySQL",
+          "AWS",
+          "Docker"
+        ]
+      },
+      {
+        "link": "https://hortplus.com",
+        "title": "Software Developer Intern",
+        "company": "HortPlus",
+        "startDate": "November 2021",
+        "endDate": "February 2022",
+        "description": [
+          "I played a key role in developing and maintaining a web application, implementing both front-end and back-end features that improved stability and user experience, leading to a 300% increase in the user base. A major achievement was developing a complex mapping feature using Mapbox, replacing the legacy version for a significantly improved user experience.",
+          "Beyond development, I worked closely with designers to refine the application's visual elements, ensuring a seamless and responsive design across all devices. Additionally, I conducted thorough maintenance and debugging, resolving critical issues that enhanced the application's overall reliability."
+        ],
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "MobX",
+          "Laravel",
+          "Mapbox",
+          "MySQL",
+          "AWS",
+          "Docker"
+        ]
+      }
+    ]
   },
   "projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "projects": [
+      {
+        "type": "Web App",
+        "link": "",
+        "title": "Timer App",
+        "description": "Create and play a series of timers. Great for timing workouts and improving focus for studying.",
+        "skills": [
+          "NextJS",
+          "TypeScript",
+          "Prisma",
+          "PostgreSQL",
+          "TailwindCSS",
+          "Vercel"
+        ],
+        "githubLink": "https://github.com/ThomasRainford/timer-app"
+      },
+      {
+        "type": "Web App",
+        "link": "",
+        "title": "Personal Website",
+        "description": "First iteration of my personal website, built with React, TypeScript, Vite, DaisyUI and TailwindCSS.",
+        "skills": ["React", "TypeScript", "Vite", "TailwindCSS"],
+        "githubLink": "https://github.com/ThomasRainford/personal-site-v1"
+      }
+    ]
   },
   "contact": {
     "title": "Contact"
