@@ -15,17 +15,24 @@ const Navbar = () => {
       <div className="hidden flex-none sm:block">
         <ul className="menu menu-md menu-horizontal">
           {/* Navbar menu content here */}
-          {sections.map((section) => {
-            const sectionFormatted =
-              section.charAt(0).toUpperCase() + section.slice(1);
-            return (
-              <li key={section}>
-                <a className="text-accent" href={`#${section}`}>
-                  {sectionFormatted}
-                </a>
-              </li>
-            );
-          })}
+          <>
+            {sections.map((section) => {
+              const sectionFormatted =
+                section.charAt(0).toUpperCase() + section.slice(1);
+              return (
+                <li key={section}>
+                  <a className="text-accent" href={`#${section}`}>
+                    {sectionFormatted}
+                  </a>
+                </li>
+              );
+            })}
+            <div className="flex items-center ml-3">
+              <a href={"https://github.com/ThomasRainford"} target="_blank">
+                <i className="devicon-github-original text-2xl text-accent"></i>
+              </a>
+            </div>
+          </>
         </ul>
       </div>
       <div className="flex-none sm:hidden mr-3">

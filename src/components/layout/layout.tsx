@@ -17,30 +17,39 @@ const Layout = ({ children }: Props) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         />
-        <ul className="menu bg-base-200 min-h-full w-80 p-4">
-          <div className="mt-12">
+        <ul className="menu bg-base-200 min-h-full h-[100%] w-80 p-5">
+          <div className="mt-12 h-[100%]">
             {/* Sidebar content here */}
-            {sections.map((section) => {
-              const sectionFormatted =
-                section.charAt(0).toUpperCase() + section.slice(1);
-              return (
-                <div
-                  key={section}
-                  className="flex justify-center items-center mb-4"
-                >
-                  <li key={section} className="">
-                    <div>
-                      <a
-                        className="text-accent text-center"
-                        href={`#${section}`}
-                      >
-                        <h4 className="text-lg">{sectionFormatted}</h4>
-                      </a>
+            <div className="flex flex-col justify-between h-[100%]">
+              <div>
+                {sections.map((section) => {
+                  const sectionFormatted =
+                    section.charAt(0).toUpperCase() + section.slice(1);
+                  return (
+                    <div
+                      key={section}
+                      className="flex justify-center items-center mb-4"
+                    >
+                      <li key={section} className="">
+                        <div>
+                          <a
+                            className="text-accent text-center"
+                            href={`#${section}`}
+                          >
+                            <h4 className="text-lg">{sectionFormatted}</h4>
+                          </a>
+                        </div>
+                      </li>
                     </div>
-                  </li>
-                </div>
-              );
-            })}
+                  );
+                })}
+              </div>
+              <div className="text-center">
+                <a href={"https://github.com/ThomasRainford"} target="_blank">
+                  <i className="devicon-github-original text-3xl text-accent"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </ul>
       </div>
