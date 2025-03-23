@@ -42,6 +42,19 @@ const App = () => {
               </a>
             </div>
           </div>
+          <div className="flex justify-center mb-4">
+            <button
+              className="btn btn-sm btn-primary p-1"
+              onClick={() => {
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Scroll To Top
+            </button>
+          </div>
         </div>
       </Layout>
     </main>
