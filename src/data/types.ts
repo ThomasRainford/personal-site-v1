@@ -42,6 +42,13 @@ export type ProjectsSection = {
   }[];
 };
 
+export type ContactSection = {
+  title: string;
+  email: string;
+  github: string;
+  linkedin: string;
+};
+
 export type SiteData = {
   [K in SectionKeys]:
     | {
@@ -49,5 +56,6 @@ export type SiteData = {
       }
     | AboutSection
     | ExperienceSection
-    | ProjectsSection;
+    | ProjectsSection
+    | ContactSection;
 };

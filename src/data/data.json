@@ -117,6 +117,9 @@
     ]
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "email": "thomas@rainfords.net",
+    "github": "https://github.com/ThomasRainford",
+    "linkedin": "https://www.linkedin.com/in/thomasrainford/"
   }
 }
