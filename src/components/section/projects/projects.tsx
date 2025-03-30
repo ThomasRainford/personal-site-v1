@@ -38,11 +38,17 @@ const Projects = () => {
                     <i className="devicon-github-original text-2xl text-accent"></i>
                   </a>
                 </div>
-                <div className="mt-[2px]">
-                  <a href={project.link} target="_blank">
-                    <LinkIcon colour="text-accent" width="20px" height="20px" />
-                  </a>
-                </div>
+                {project.link && (
+                  <div className="mt-[2px]">
+                    <a href={project.link} target="_blank">
+                      <LinkIcon
+                        colour="text-accent"
+                        width="20px"
+                        height="20px"
+                      />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
             {index !== self.length - 1 && (
