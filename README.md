@@ -16,7 +16,7 @@ Run dev server.
 npm run dev
 ```
 
-## Style Links
+## 🎨 Style Links
 
 DaisyUI - https://daisyui.com/
 TailwindCSS - https://tailwindcss.com/
