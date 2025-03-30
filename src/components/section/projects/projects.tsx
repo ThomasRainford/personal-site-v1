@@ -35,14 +35,20 @@ const Projects = () => {
               <div className="flex flex-row ml-1">
                 <div className="mr-4">
                   <a href={project.githubLink} target="_blank">
-                    <i className="devicon-github-original text-2xl"></i>
+                    <i className="devicon-github-original text-2xl text-accent"></i>
                   </a>
                 </div>
-                <div className="mt-[2px]">
-                  <a href={project.link} target="_blank">
-                    <LinkIcon colour="text-accent" width="20px" height="20px" />
-                  </a>
-                </div>
+                {project.link && (
+                  <div className="mt-[2px]">
+                    <a href={project.link} target="_blank">
+                      <LinkIcon
+                        colour="text-accent"
+                        width="20px"
+                        height="20px"
+                      />
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
             {index !== self.length - 1 && (

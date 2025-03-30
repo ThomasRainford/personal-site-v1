@@ -93,7 +93,7 @@
     "projects": [
       {
         "type": "Web App",
-        "link": "",
+        "link": "https://timer-app-snowy.vercel.app",
         "title": "Timer App",
         "description": "Create and play a series of timers. Great for timing workouts and improving focus for studying.",
         "skills": [
@@ -108,15 +108,16 @@
       },
       {
         "type": "Web App",
-        "link": "",
         "title": "Personal Website",
-        "description": "First iteration of my personal website, built with React, TypeScript, Vite, DaisyUI and TailwindCSS.",
+        "description": "This sight! First iteration of my personal website, built with React, TypeScript, Vite, DaisyUI and TailwindCSS.",
         "skills": ["React", "TypeScript", "Vite", "TailwindCSS"],
         "githubLink": "https://github.com/ThomasRainford/personal-site-v1"
       }
     ]
   },
   "contact": {
-    "title": "Contact"
+    "title": "Get In Touch",
+    "email": "thomas@rainfords.net",
+    "linkedin": "https://www.linkedin.com/in/thomasrainford/"
   }
 }

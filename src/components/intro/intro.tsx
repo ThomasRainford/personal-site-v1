@@ -30,7 +30,7 @@ const Intro = () => {
           .
         </p>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 pl-4">
         <svg
           className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px]"
           xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,7 @@
 import About from "./about/about";
+import Contact from "./contact/contact";
 import Experience from "./experience/experience";
-import Projects from "./projects/Projects";
+import Projects from "./projects/projects";
 
 interface Props {
   section: string;
@@ -15,7 +16,7 @@ const SectionContent = ({ section }: Props) => {
     case "projects":
       return <Projects />;
     case "contact":
-      return <></>;
+      return <Contact />;
     default:
       break;
   }
