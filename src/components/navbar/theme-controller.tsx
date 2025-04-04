@@ -11,13 +11,13 @@ const ThemeController = () => {
 
   return (
     <div>
-      <label className="cursor-pointer grid place-items-center">
+      <label className="swap swap-rotate grid place-items-center">
         <input
           type="checkbox"
           checked={theme === "light"}
           onChange={handleToggle}
           value={theme}
-          className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+          className=" theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
         />
         {theme === "light" ? <MoonIcon /> : <SunIcon />}
       </label>

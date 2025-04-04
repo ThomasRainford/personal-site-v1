@@ -25,10 +25,14 @@ const Projects = () => {
               <div className="mb-2">
                 <p className="text-md opacity-90">{project.description}</p>
               </div>
-              <div className="mb-2">
+              <div className="mb-1">
                 <div className="flex flex-row flex-wrap">
                   {project.skills.map((skill) => {
-                    return <SkillPill key={skill} skill={skill} />;
+                    return (
+                      <div key={skill} className="mr-2 mb-2">
+                        <SkillPill key={skill} skill={skill} />
+                      </div>
+                    );
                   })}
                 </div>
               </div>

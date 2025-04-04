@@ -55,7 +55,11 @@ const About = () => {
                     <p className="text-accent">{splitAndCapitalize(key)}</p>
                     <div className="flex flex-row flex-wrap">
                       {value.map((skill) => {
-                        return <SkillPill key={skill} skill={skill} />;
+                        return (
+                          <div key={skill} className="mr-2 mb-2">
+                            <SkillPill key={skill} skill={skill} />
+                          </div>
+                        );
                       })}
                     </div>
                   </div>

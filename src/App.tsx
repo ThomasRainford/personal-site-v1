@@ -44,7 +44,7 @@ const App = () => {
           </div>
           <div className="flex justify-center mb-4">
             <button
-              className="btn btn-soft btn-primary px-2 py-1"
+              className="btn btn-soft btn-secondary px-2 py-1"
               onClick={() => {
                 window.scrollTo({
                   top: 0,
