@@ -21,7 +21,7 @@ const Intro = () => {
           I build scalable and maintainable soultions with great user
           experiences. Currently working at{" "}
           <a
-            className="text-base-content"
+            className="text-base-content hover:underline"
             target="_blank"
             href="https://hortplus.com"
           >

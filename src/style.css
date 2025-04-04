@@ -2,8 +2,5 @@
 @plugin "daisyui" {
   themes: light, forest --default --prefersdark;
   root: ":root";
-  include: ;
-  exclude: ;
-  prefix: ;
   logs: true;
 }
