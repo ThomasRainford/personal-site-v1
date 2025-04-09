@@ -13,7 +13,7 @@ const About = () => {
     <div>
       <div className="text-accent mb-4">
         <p className="mb-2">
-          I'm a full-stack software engineer who loves building scalable,
+          I'm a full-stack software engineer who enjoys building scalable,
           high-quality web applications using modern technologies. I thrive in a
           collaborative environment, working closely with developers and
           designers to bring ideas to life.
