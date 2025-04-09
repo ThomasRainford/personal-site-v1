@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar flex justify-between w-full py-5">
       <div className="ml-3 px-2">
         <a
-          className="btn btn-outlilne text-4xl font-medium text-primary px-4 py-1 border-2"
+          className="btn btn-outline btn-primary text-4xl font-medium px-4 py-4"
           href="/"
         >
           TR
@@ -33,15 +33,15 @@ const Navbar = () => {
                 <i className="devicon-github-original text-2xl text-accent"></i>
               </a>
             </div>
-            <div className="flex-none ml-4">
+            <div className="ml-4 pt-0.5">
               <ThemeController />
             </div>
           </>
         </ul>
       </div>
-      <div className="flex flex-row sm:hidden mr-3">
+      <div className="flex flex-row items-center sm:hidden mr-3">
         <div>
-          <div className="flex-none mr-3">
+          <div className="mr-3">
             <ThemeController />
           </div>
         </div>

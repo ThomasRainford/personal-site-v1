@@ -25,7 +25,7 @@ const Experience = () => {
                   </a>
                 </div>
               </div>
-              <div className="text-sm text-accent opacity-80 mb-2">
+              <div className="text-sm text-accent opacity-90 mb-2">
                 <div>
                   {job.startDate} - {job.endDate}
                 </div>
@@ -42,7 +42,11 @@ const Experience = () => {
               <div>
                 <div className="flex flex-row flex-wrap">
                   {job.skills.map((skill) => {
-                    return <SkillPill key={skill} skill={skill} />;
+                    return (
+                      <div key={skill} className="mr-2 mb-2">
+                        <SkillPill key={skill} skill={skill} />
+                      </div>
+                    );
                   })}
                 </div>
               </div>
