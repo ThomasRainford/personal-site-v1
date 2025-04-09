@@ -18,8 +18,8 @@ npm run dev
 
 ## 🎨 Style Links
 
-DaisyUI - https://daisyui.com/
-TailwindCSS - https://tailwindcss.com/
+- DaisyUI - https://daisyui.com/
+- TailwindCSS - https://tailwindcss.com/
 
 ## 🚀 Build and Run for Production
 
