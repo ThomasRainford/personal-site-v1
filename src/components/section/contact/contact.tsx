@@ -12,12 +12,12 @@ const Contact = () => {
       <div className="flex flex-row ml-2">
         <div className="mr-4">
           <a href={`mailto:${email}`}>
-            <MailIcon width="30px" height="30px" colour="text-accent" />
+            <MailIcon width="30px" height="30px" colour="text-secondary" />
           </a>
         </div>
         <div className="mr-4">
           <a href={linkedin} target="_blank">
-            <i className="devicon-linkedin-plain text-3xl text-accent"></i>
+            <i className="devicon-linkedin-plain text-3xl text-secondary"></i>
           </a>
         </div>
       </div>

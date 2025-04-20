@@ -22,7 +22,7 @@ const Navbar = () => {
                 section.charAt(0).toUpperCase() + section.slice(1);
               return (
                 <li key={section}>
-                  <a className="text-accent" href={`#${section}`}>
+                  <a className="text-secondary" href={`#${section}`}>
                     {sectionFormatted}
                   </a>
                 </li>

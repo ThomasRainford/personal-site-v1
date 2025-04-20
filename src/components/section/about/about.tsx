@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="text-accent mb-4">
+      <div className="mb-4">
         <p className="mb-2">
           I'm a full-stack software engineer who enjoys building scalable,
           high-quality web applications using modern technologies. I thrive in a
@@ -52,7 +52,7 @@ const About = () => {
               {Object.entries(allSkills).map(([key, value]) => {
                 return (
                   <div key={key} className="mb-2">
-                    <p className="text-accent">{splitAndCapitalize(key)}</p>
+                    <p className="text-secondary">{splitAndCapitalize(key)}</p>
                     <div className="flex flex-row flex-wrap">
                       {value.map((skill) => {
                         return (

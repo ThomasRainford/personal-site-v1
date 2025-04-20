@@ -39,14 +39,14 @@ const Projects = () => {
               <div className="flex flex-row ml-1">
                 <div className="mr-4">
                   <a href={project.githubLink} target="_blank">
-                    <i className="devicon-github-original text-2xl text-accent"></i>
+                    <i className="devicon-github-original text-2xl text-secondary"></i>
                   </a>
                 </div>
                 {project.link && (
                   <div className="mt-[2px]">
                     <a href={project.link} target="_blank">
                       <LinkIcon
-                        colour="text-accent"
+                        colour="text-secondary"
                         width="20px"
                         height="20px"
                       />
