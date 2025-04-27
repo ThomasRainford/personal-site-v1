@@ -9,7 +9,10 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="flex flex-row ml-2">
+      <div className="mb-4">
+        <h3 className="text-lg font-bold">Get In Touch</h3>
+      </div>
+      <div className="flex flex-row ml-1">
         <div className="mr-4">
           <a href={`mailto:${email}`}>
             <MailIcon width="30px" height="30px" colour="text-secondary" />
