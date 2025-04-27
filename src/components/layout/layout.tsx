@@ -1,4 +1,5 @@
 import { getSiteSections } from "../../data/data";
+import CVButton from "../CVButton";
 
 interface Props {
   children: React.ReactNode;
@@ -45,9 +46,14 @@ const Layout = ({ children }: Props) => {
                 })}
               </div>
               <div className="text-center">
-                <a href={"https://github.com/ThomasRainford"} target="_blank">
-                  <i className="devicon-github-original text-3xl text-accent"></i>
-                </a>
+                <div className="mb-8">
+                  <CVButton />
+                </div>
+                <div>
+                  <a href={"https://github.com/ThomasRainford"} target="_blank">
+                    <i className="devicon-github-original text-3xl text-accent"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

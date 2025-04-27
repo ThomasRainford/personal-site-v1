@@ -1,4 +1,5 @@
 import { getSiteSections } from "../../data/data";
+import CVButton from "../CVButton";
 import ThemeController from "./theme-controller";
 
 const Navbar = () => {
@@ -28,12 +29,16 @@ const Navbar = () => {
                 </li>
               );
             })}
-            <div className="flex items-center ml-3">
+            <div className="divider divider-horizontal m-0"></div>
+            <div className="ml-2">
+              <CVButton sm />
+            </div>
+            <div className="flex items-center ml-3 pt-0.5">
               <a href={"https://github.com/ThomasRainford"} target="_blank">
                 <i className="devicon-github-original text-2xl text-accent"></i>
               </a>
             </div>
-            <div className="ml-4 pt-0.5">
+            <div className="ml-3 pt-0.5">
               <ThemeController />
             </div>
           </>
