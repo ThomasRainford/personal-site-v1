@@ -1,22 +1,42 @@
 # Personal Site v1
 
+Version 1 of my personal site.
+
 Built with React with TypeScript and Vite. Styling with DaisyUI and TailwindCSS.
 
-## 🛠 Development
+## 🛠️ Tech Stack
 
-Install.
+- **Framework:** React with TypeScript
+- **Build Tool:** Vite
+- **Styling:** TailwindCSS with DaisyUI
+
+📋 Prerequisites
+
+- **Node.js** (v20+)
+- **npm**
+
+### 🛠 Development
+
+#### Clone Repository:
+
+```bash
+git clone [https://github.com/yourusername/personal-site.git](https://github.com/ThomasRainford/personal-site-v1)
+cd personal-site-v1
+```
+
+#### Install:
 
 ```bash
 npm i
 ```
 
-Run dev server.
+#### Run dev server:
 
 ```bash
 npm run dev
 ```
 
-## 🎨 Style Links
+## 🎨 Styling Resources
 
 - DaisyUI - https://daisyui.com/
 - TailwindCSS - https://tailwindcss.com/
