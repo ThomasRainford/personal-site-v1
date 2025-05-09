@@ -32,11 +32,11 @@ const App = () => {
               );
             })}
           </div>
-          <div className="flex flex-row justify-center mb-4 mt-4">
-            <div className="text-secondary opacity-70 text-sm  mr-2">
+          <div className="flex flex-col justify-center mb-4 mt-4">
+            <div className="text-secondary text-center opacity-70 text-sm mb-2">
               Designed and developed by Thomas Rainford
             </div>
-            <div className="mr-4">
+            <div className="flex flex-col justify-center items-center">
               <a href={"https://github.com/ThomasRainford"} target="_blank">
                 <i className="devicon-github-original text-lg text-secondary opacity-70"></i>
               </a>

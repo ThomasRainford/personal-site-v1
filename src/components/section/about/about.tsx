@@ -45,9 +45,9 @@ const About = () => {
       </div>
       <div className="mb-4">
         <div className="mb-4">
-          <div className="collapse border border-neutral">
+          <div className="collapse collapse-arrow border border-neutral">
             <input type="checkbox" className="peer" />
-            <div className="collapse-title">All Skills:</div>
+            <div className="collapse-title">All Skills</div>
             <div className="collapse-content">
               {Object.entries(allSkills).map(([key, value]) => {
                 return (

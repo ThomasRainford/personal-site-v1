@@ -18,7 +18,7 @@ const Layout = ({ children }: Props) => {
           aria-label="close sidebar"
           className="drawer-overlay"
         />
-        <ul className="menu bg-base-200 min-h-full h-[100%] w-80 p-5">
+        <ul className="menu bg-base-200 min-h-full h-[100%] w-60  p-5">
           <div className="mt-12 h-[100%]">
             {/* Sidebar content here */}
             <div className="flex flex-col justify-between h-[100%]">

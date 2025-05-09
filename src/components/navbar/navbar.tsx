@@ -46,7 +46,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row items-center sm:hidden mr-3">
         <div>
-          <div className="mr-3">
+          <div className="mr-1">
             <ThemeController />
           </div>
         </div>

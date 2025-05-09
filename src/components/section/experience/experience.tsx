@@ -13,7 +13,7 @@ const Experience = () => {
         return (
           <Fragment key={job.company + job.title}>
             <div className="w-[100%] sm:w-[80%] md:w-[80%] lg:w-[70%] border border-neutral p-3 rounded">
-              <div className="flex flex-row text-lg mb-2">
+              <div className="flex flex-row flex-wrap text-lg mb-2">
                 <div className="mr-1">{job.title}</div>
                 <div>
                   <a
