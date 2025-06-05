@@ -17,7 +17,8 @@ const ThemeController = () => {
           checked={theme === "light"}
           onChange={handleToggle}
           value={theme}
-          className=" theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+          style={{ opacity: 0 }} // Removes checkbox style for mobile.
+          className="theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
         />
         {theme === "light" ? <MoonIcon /> : <SunIcon />}
       </label>
