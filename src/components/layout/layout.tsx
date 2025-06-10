@@ -51,7 +51,7 @@ const Layout = ({ children }: Props) => {
                 </div>
                 <div>
                   <a href={"https://github.com/ThomasRainford"} target="_blank">
-                    <i className="devicon-github-original text-3xl text-accent"></i>
+                    <i className="devicon-github-original text-4xl text-accent"></i>
                   </a>
                 </div>
               </div>
