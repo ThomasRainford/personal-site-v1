@@ -1,7 +1,7 @@
 const MoonIcon = () => {
   return (
     <svg
-      className="swap-on h-9 w-9 fill-current"
+      className="swap-off h-9 w-9 fill-current"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >

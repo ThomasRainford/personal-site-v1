@@ -11,7 +11,7 @@ const ThemeController = () => {
 
   return (
     <div>
-      <label className="swap swap-rotate grid place-items-center">
+      <label className="swap swap-rotate">
         <input
           type="checkbox"
           checked={theme === "light"}
@@ -20,7 +20,8 @@ const ThemeController = () => {
           style={{ opacity: 0 }} // Removes checkbox style for mobile.
           className="theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
         />
-        {theme === "light" ? <MoonIcon /> : <SunIcon />}
+        <MoonIcon />
+        <SunIcon />
       </label>
     </div>
   );

@@ -1,21 +1,19 @@
-import DrawerIcon from "../icons/DrawerIcon";
-import ThemeController from "./theme-controller";
+import DrawerIcon from "../../icons/DrawerIcon";
+import ThemeController from "../theme-controller";
 
 const MobileMenu = () => {
   return (
     <div className="flex flex-row items-center sm:hidden mr-3">
       <div className="mr-3">
-        <div>
-          <ThemeController />
-        </div>
+        <ThemeController />
       </div>
       <div>
         <label
           htmlFor="navbar-drawer"
           aria-label="open sidebar"
-          className="btn btn-square btn-ghost border-0"
+          className="btn btn-ghost border-0 p-2"
         >
-          <DrawerIcon colour="fill-accent" width="40px" height="40px" />
+          <DrawerIcon colour="fill-current" width="45px" height="45px" />
         </label>
       </div>
     </div>

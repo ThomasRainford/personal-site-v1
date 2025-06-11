@@ -1,5 +1,5 @@
-import DesktopMenu from "./DesktopMenu";
-import MobileMenu from "./MobileMenu";
+import DesktopMenu from "./desktop/DesktopMenu";
+import MobileMenu from "./mobile/MobileMenu";
 
 const Navbar = () => {
   return (

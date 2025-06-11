@@ -1,13 +1,13 @@
-import { getSiteSections } from "../../data/data";
-import CVButton from "../CVButton";
-import ThemeController from "./theme-controller";
+import { getSiteSections } from "../../../data/data";
+import CVButton from "../../CVButton";
+import ThemeController from "../theme-controller";
 
 const DesktopMenu = () => {
   const sections = getSiteSections();
 
   return (
     <div className="hidden flex-none sm:block mr-3">
-      <ul className="menu menu-md menu-horizontal">
+      <ul className="menu menu-md menu-horizontal p-0">
         {/* Navbar menu content */}
         <>
           <div className="flex flex-row">
@@ -30,7 +30,7 @@ const DesktopMenu = () => {
             </div>
             <div className="flex items-center ml-4 pt-0.5">
               <a href={"https://github.com/ThomasRainford"} target="_blank">
-                <i className="devicon-github-original text-3xl text-accent"></i>
+                <i className="devicon-github-original text-3xl text-current"></i>
               </a>
             </div>
             <div className="ml-3">
