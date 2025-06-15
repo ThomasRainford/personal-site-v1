@@ -18,10 +18,10 @@ const ThemeController = () => {
           onChange={handleToggle}
           value={theme}
           style={{ opacity: 0 }} // Removes checkbox style for mobile.
-          className="theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+          className="bg-base-content row-start-1 col-start-1 col-span-2"
         />
-        <MoonIcon />
         <SunIcon />
+        <MoonIcon />
       </label>
     </div>
   );
