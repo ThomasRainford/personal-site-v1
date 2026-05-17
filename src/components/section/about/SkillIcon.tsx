@@ -3,7 +3,7 @@ interface Props {
 }
 
 const SkillIcon = ({ skill }: Props) => {
-  switch (skill) {
+  switch (skill.replace(/\s+/g, '')) {
     case "react":
       return <i className="devicon-react-original colored text-4xl"></i>;
     case "typescript":
@@ -14,6 +14,8 @@ const SkillIcon = ({ skill }: Props) => {
       return <i className="devicon-nodejs-plain colored text-4xl"></i>;
     case "python":
       return <i className="devicon-python-plain colored text-4xl"></i>;
+    case ".netcore":
+      return <i className="devicon-dotnetcore-plain colored text-4xl"></i>
     case "java":
       return <i className="devicon-java-plain colored text-4xl"></i>;
     case "laravel":
